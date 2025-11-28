@@ -4,9 +4,51 @@ from pdf2image import convert_from_path
 from PyPDF2 import PdfReader, PdfWriter
 import config
 import utilitarios as utils
+import traceback
 
 
-pytesseract.pytesseract.tesseract_cmd = config.PATH_TESSERACT
+def _resolve_tesseract_path():
+    caminho = config.PATH_TESSERACT
+    # If the config value is a directory, check for tesseract.exe inside it
+    if os.path.isdir(caminho):
+        # search recursively for tesseract.exe inside the provided directory
+        for root, dirs, files in os.walk(caminho):
+            if 'tesseract.exe' in files:
+                return os.path.join(root, 'tesseract.exe')
+        candidatos = [os.path.join(caminho, 'tesseract.exe')]
+    else:
+        candidatos = [caminho, os.path.join(caminho, 'tesseract.exe')]
+
+    # common install locations
+    candidatos.extend([
+        r'C:\Program Files\Tesseract-OCR\tesseract.exe',
+        r'C:\Program Files (x86)\Tesseract-OCR\tesseract.exe'
+    ])
+
+    for c in candidatos:
+        if c and os.path.isfile(c):
+            return c
+
+    # fallback: try system PATH
+    try:
+        from shutil import which
+        caminho_path = which('tesseract')
+        if caminho_path:
+            return caminho_path
+    except Exception:
+        pass
+
+    return None
+
+
+tess_exe = _resolve_tesseract_path()
+if tess_exe:
+    pytesseract.pytesseract.tesseract_cmd = tess_exe
+else:
+    # Log a clear error and raise so the caller can handle it
+    import utilitarios as _utils
+    _utils.registrar_log('Tesseract não encontrado. Defina PATH_TESSERACT em config.py com o caminho completo para o executável tesseract.exe', 'ERRO')
+    raise FileNotFoundError('Tesseract executable not found; set PATH_TESSERACT to full path of tesseract.exe')
 
 def identificar_metadados(texto_pagina):
     
@@ -110,4 +152,5 @@ def processar_arquivo(caminho_arquivo_entrada):
 
     except Exception as e:
         utils.registrar_log(f"Erro fatal ao processar {nome_arquivo}: {e}", "ERRO")
+        utils.registrar_log(traceback.format_exc(), "ERRO")
         

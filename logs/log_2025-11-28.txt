@@ -1,0 +1,108 @@
+[08:57:38] [INFO] Iniciando processamento de: CCF28112025.pdf
+[08:57:48] [ERRO] Erro fatal ao processar CCF28112025.pdf: [WinError 5] Acesso negado
+[08:58:17] [INFO] Iniciando processamento de: CCF28112025_0001.pdf
+[08:58:18] [ERRO] Erro fatal ao processar CCF28112025_0001.pdf: [WinError 5] Acesso negado
+[08:58:42] [INFO] Iniciando processamento de: CCF28112025_0002.pdf
+[08:58:42] [ERRO] Erro fatal ao processar CCF28112025_0002.pdf: [WinError 5] Acesso negado
+[09:37:01] [INFO] Iniciando processamento de: CCF28112025_0003.pdf
+[09:37:01] [ERRO] Erro fatal ao processar CCF28112025_0003.pdf: [WinError 5] Acesso negado
+[13:38:10] [INFO] Iniciando processamento de: ADITIVO E CONTRATO.pdf
+[13:38:12] [ERRO] Erro fatal ao processar ADITIVO E CONTRATO.pdf: [WinError 5] Acesso negado
+[13:38:12] [INFO] Iniciando processamento de: Boleto.pdf
+[13:38:13] [ERRO] Erro fatal ao processar Boleto.pdf: [WinError 5] Acesso negado
+[13:38:13] [INFO] Iniciando processamento de: CCF28112025.pdf
+[13:38:18] [ERRO] Erro fatal ao processar CCF28112025.pdf: [WinError 5] Acesso negado
+[13:38:18] [INFO] Iniciando processamento de: CERTIFICADO.pdf
+[13:38:18] [ERRO] Erro fatal ao processar CERTIFICADO.pdf: [WinError 5] Acesso negado
+[13:39:42] [INFO] Iniciando processamento de: CCF28112025.pdf
+[13:39:47] [ERRO] Erro fatal ao processar CCF28112025.pdf: [WinError 5] Acesso negado
+[13:49:24] [INFO] Iniciando processamento de: CCF28112025.pdf
+[13:49:29] [ERRO] Erro fatal ao processar CCF28112025.pdf: [WinError 5] Acesso negado
+[13:49:29] [ERRO] Traceback (most recent call last):
+  File "C:\Users\c00188\Documents\Sistema_Digitalização\src\processador.py", line 76, in processar_arquivo
+    texto = pytesseract.image_to_string(imagens[i], lang='por')
+  File "C:\Users\c00188\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pytesseract\pytesseract.py", line 486, in image_to_string
+    return {
+           ~
+    ...<2 lines>...
+        Output.STRING: lambda: run_and_get_output(*args),
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    }[output_type]()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\c00188\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pytesseract\pytesseract.py", line 489, in <lambda>
+    Output.STRING: lambda: run_and_get_output(*args),
+                           ~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\c00188\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pytesseract\pytesseract.py", line 352, in run_and_get_output
+    run_tesseract(**kwargs)
+    ~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\c00188\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pytesseract\pytesseract.py", line 275, in run_tesseract
+    proc = subprocess.Popen(cmd_args, **subprocess_args())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1039, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        pass_fds, cwd, env,
+                        ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+                        gid, gids, uid, umask,
+                        ^^^^^^^^^^^^^^^^^^^^^^
+                        start_new_session, process_group)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1554, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+                             # no special security
+                             ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+                             cwd,
+                             ^^^^
+                             startupinfo)
+                             ^^^^^^^^^^^^
+PermissionError: [WinError 5] Acesso negado
+
+[13:50:11] [INFO] Iniciando processamento de: CCF28112025.pdf
+[13:50:16] [ERRO] Erro fatal ao processar CCF28112025.pdf: [WinError 5] Acesso negado
+[13:50:16] [ERRO] Traceback (most recent call last):
+  File "C:\Users\c00188\Documents\Sistema_Digitalização\src\processador.py", line 76, in processar_arquivo
+    texto = pytesseract.image_to_string(imagens[i], lang='por')
+  File "C:\Users\c00188\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pytesseract\pytesseract.py", line 486, in image_to_string
+    return {
+           ~
+    ...<2 lines>...
+        Output.STRING: lambda: run_and_get_output(*args),
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    }[output_type]()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\c00188\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pytesseract\pytesseract.py", line 489, in <lambda>
+    Output.STRING: lambda: run_and_get_output(*args),
+                           ~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\c00188\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pytesseract\pytesseract.py", line 352, in run_and_get_output
+    run_tesseract(**kwargs)
+    ~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\c00188\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pytesseract\pytesseract.py", line 275, in run_tesseract
+    proc = subprocess.Popen(cmd_args, **subprocess_args())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1039, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        pass_fds, cwd, env,
+                        ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+                        gid, gids, uid, umask,
+                        ^^^^^^^^^^^^^^^^^^^^^^
+                        start_new_session, process_group)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2544.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1554, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+                             # no special security
+                             ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+                             cwd,
+                             ^^^^
+                             startupinfo)
+                             ^^^^^^^^^^^^
+PermissionError: [WinError 5] Acesso negado
+
+[13:51:15] [ERRO] Tesseract não encontrado. Defina PATH_TESSERACT em config.py com o caminho completo para o executável tesseract.exe
+[13:55:50] [ERRO] Tesseract não encontrado. Defina PATH_TESSERACT em config.py com o caminho completo para o executável tesseract.exe
+[13:56:20] [ERRO] Tesseract não encontrado. Defina PATH_TESSERACT em config.py com o caminho completo para o executável tesseract.exe
+[13:58:50] [ERRO] Tesseract não encontrado. Defina PATH_TESSERACT em config.py com o caminho completo para o executável tesseract.exe

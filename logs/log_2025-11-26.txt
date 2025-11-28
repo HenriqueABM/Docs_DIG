@@ -1,0 +1,32 @@
+[10:31:58] [INFO] Iniciando processamento de: CCF26112025.pdf
+[10:32:11] [ERRO] Erro fatal ao processar CCF26112025.pdf: [WinError 5] Acesso negado
+[10:32:56] [INFO] Iniciando processamento de: CCF26112025_0001.pdf
+[10:32:57] [ERRO] Erro fatal ao processar CCF26112025_0001.pdf: [WinError 5] Acesso negado
+[10:34:24] [INFO] Iniciando processamento de: CCF26112025_0002.pdf
+[10:34:25] [ERRO] Erro fatal ao processar CCF26112025_0002.pdf: [WinError 5] Acesso negado
+[10:38:43] [INFO] Iniciando processamento de: CCF26112025.pdf
+[10:38:48] [ERRO] Erro fatal ao processar CCF26112025.pdf: [WinError 5] Acesso negado
+[10:41:48] [INFO] Iniciando processamento de: ADITIVOS E CONTRATO.pdf
+[10:41:51] [ERRO] Erro fatal ao processar ADITIVOS E CONTRATO.pdf: [WinError 5] Acesso negado
+[11:24:11] [INFO] Iniciando processamento de: CCF26112025.pdf
+[11:24:17] [ERRO] Erro fatal ao processar CCF26112025.pdf: [WinError 5] Acesso negado
+[11:25:37] [INFO] Iniciando processamento de: CCF26112025_0001.pdf
+[11:25:38] [ERRO] Erro fatal ao processar CCF26112025_0001.pdf: [WinError 5] Acesso negado
+[11:26:39] [INFO] Iniciando processamento de: CCF26112025_0002.pdf
+[11:26:40] [ERRO] Erro fatal ao processar CCF26112025_0002.pdf: [WinError 5] Acesso negado
+[11:28:10] [INFO] Iniciando processamento de: CCF26112025_0003.pdf
+[11:28:11] [ERRO] Erro fatal ao processar CCF26112025_0003.pdf: [WinError 5] Acesso negado
+[11:31:16] [INFO] Iniciando processamento de: ADITIVOS E CONTRATO.pdf
+[11:31:19] [ERRO] Erro fatal ao processar ADITIVOS E CONTRATO.pdf: [WinError 5] Acesso negado
+[13:30:08] [INFO] Iniciando processamento de: CCF26112025.pdf
+[13:30:12] [ERRO] Erro fatal ao processar CCF26112025.pdf: [WinError 5] Acesso negado
+[13:31:00] [INFO] Iniciando processamento de: CCF26112025_0001.pdf
+[13:31:00] [ERRO] Erro fatal ao processar CCF26112025_0001.pdf: [WinError 5] Acesso negado
+[13:32:35] [INFO] Iniciando processamento de: CCF26112025_0002.pdf
+[13:32:37] [ERRO] Erro fatal ao processar CCF26112025_0002.pdf: [WinError 5] Acesso negado
+[13:33:02] [INFO] Iniciando processamento de: CCF26112025_0003.pdf
+[13:33:02] [ERRO] Erro fatal ao processar CCF26112025_0003.pdf: [WinError 5] Acesso negado
+[13:37:38] [INFO] Iniciando processamento de: CCF26112025.pdf
+[13:37:43] [ERRO] Erro fatal ao processar CCF26112025.pdf: [WinError 5] Acesso negado
+[13:40:28] [INFO] Iniciando processamento de: ADITIVOS E CONTRATO.pdf
+[13:40:30] [ERRO] Erro fatal ao processar ADITIVOS E CONTRATO.pdf: [WinError 5] Acesso negado

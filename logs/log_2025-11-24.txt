@@ -1,0 +1,6 @@
+[12:26:38] [INFO] Iniciando processamento de: CCF24112025_0009.pdf
+[12:26:38] [ERRO] Erro fatal ao processar CCF24112025_0009.pdf: Unable to get page count. Is poppler installed and in PATH?
+[12:35:07] [INFO] Iniciando processamento de: CCF24112025_0010.pdf
+[12:35:14] [ERRO] Erro fatal ao processar CCF24112025_0010.pdf: C:\Program Files\Tesseract-OCR\tesseract.exe is not installed or it's not in your PATH. See README file for more information.
+[13:25:29] [INFO] Iniciando processamento de: CCF24112025_0015.pdf
+[13:25:32] [ERRO] Erro fatal ao processar CCF24112025_0015.pdf: [WinError 5] Acesso negado
